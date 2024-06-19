@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.jumbotron {
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-menu-spacing .nav-item {
+    margin-right: 15px; /* Ajuste o valor conforme necessário */
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.catalogo-section {
+    padding: 50px 0;
+}
+
+.catalogo-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.catalogo-text {
+    line-height: 1.8;
+}
+
+.btn-download {
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.bg-mustard {
+    background-color: #FFDB58;
+}
+

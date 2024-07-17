@@ -1,11 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-}
-
-.jumbotron {
-    position: relative;
-    margin-bottom: 0;
-    overflow: hidden;
+    background-color: #f7f7f7;
 }
 
 .navbar-nav .nav-item {
@@ -16,8 +11,48 @@ body {
     margin-right: 0;
 }
 
+.navbar {
+    margin-bottom: 2rem;
+}
+
 .nav-menu-spacing .nav-item {
-    margin-right: 15px; /* Ajuste o valor conforme necessário */
+    margin-right: 15px;
+}
+
+.logo-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.bg-nav {
+    background-color: #f4df94;
+}
+
+.jumbotron {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .card img {
@@ -33,13 +68,16 @@ body {
     margin-bottom: 20px;
 }
 
+/* Seção Catálogo */
 .catalogo-section {
     padding: 50px 0;
+    margin-top: 50px;
 }
 
 .catalogo-image img {
     max-width: 100%;
     margin-bottom: 20px;
+    height: auto;
 }
 
 .catalogo-text {
@@ -52,22 +90,49 @@ body {
     margin-top: 20px;
 }
 
+/* Contato Section */
+#contato {
+    padding: 50px 0;
+}
+
+#contato .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#contato .contact-info h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#contato .contact-info p {
+    margin-bottom: 15px;
+}
+
+
+/* Seção Comprar */
 footer {
     background-color: #343a40;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.logo-icon {
-    width: 75px;
-    height: 75px;
+
+.parallax {
+    background-image: url('images/background.jpg');
+    /* Substitua pela sua imagem de fundo */
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bg-mustard {
-    background-color: #FFDB58;
+.category-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
 }
-

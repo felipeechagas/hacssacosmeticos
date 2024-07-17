@@ -1,133 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Cosméticos</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-mustard">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo-hacssa.jpg" alt="Loja de Cosméticos" class="rounded-circle logo-icon" width="75">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="catalogo.html">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Depoimentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <img src="images/logo-hacssa.jpg" alt="Loja de Cosméticos" class="rounded-circle logo-icon" width="100px" height="100px">
-            <div class="video-overlay">
-                <h1 class="display-4">Bem-vindo à nossa Loja de Cosméticos</h1>
-                <p class="lead">Oferecemos produtos de alta qualidade para realçar sua beleza</p>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loja de Cosméticos</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.JPG" alt="Loja de Cosméticos"
+                    class="rounded-circle logo-icon" width="75">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto justify-content-around w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="distribuidor.html">Seja um
+                            Distribuidor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprar.html">Comprar
+                            Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contato</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success"
+                            type="submit">Search</button>
+                    </form>
+                </ul>
             </div>
-        </div>
-    </header>
+        </nav>
 
-    <!-- Produtos Section -->
-    <section id="produtos" class="container mt-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Nossos Produtos</h2>
-                <p>Conheça a variedade de produtos que oferecemos</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="images/image1.png" class="card-img-top" alt="Produto 1" width="100px" height="250px">
-                    <div class="card-body">
-                        <h5 class="card-title">Produto 1</h5>
-                        <p class="card-text">Descrição do Produto 1</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
+        <!-- Header -->
+        <header class="jumbotron jumbotron-fluid text-center bg-header">
+            <div class="container">
+                <img src="images/logo.JPG" alt="Loja de Cosméticos"
+                    class="rounded-circle logo-icon mb-4">
+                <div class="video-overlay">
+                    <h1 class="display-4">Bem-vindo à nossa Loja de
+                        Cosméticos</h1>
+                    <p class="lead">Oferecemos produtos de alta qualidade para
+                        realçar sua beleza</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="images/image2.png" class="card-img-top" alt="Produto 2" width="100px">
-                    <div class="card-body">
-                        <h5 class="card-title">Produto 2</h5>
-                        <p class="card-text">Descrição do Produto 2</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="images/image3.png" class="card-img-top" alt="Produto 3" width="100px">
-                    <div class="card-body">
-                        <h5 class="card-title">Produto 3</h5>
-                        <p class="card-text">Descrição do Produto 3</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Depoimentos Section -->
-    <section id="depoimentos" class="bg-light py-5">
-        <div class="container">
+        <!-- Produtos Section -->
+        <section id="produtos" class="container mt-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Depoimentos</h2>
-                    <p>Veja o que nossos clientes dizem</p>
+                    <h2>Nossos Produtos</h2>
+                    <p>Conheça a variedade de produtos que oferecemos</p>
+                </div>
+            </div>
+            <div id="produtosCarousel" class="carousel slide"
+                data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image1.jpg"
+                                        class="card-img-top" alt="Produto 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tônico
+                                            Capilar</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 1</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image2.jpg"
+                                        class="card-img-top" alt="Produto 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 2</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 2</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image3.jpg"
+                                        class="card-img-top" alt="Produto 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 3</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 3</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image4.jpg"
+                                        class="card-img-top" alt="Produto 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 4</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 4</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image5.png"
+                                        class="card-img-top" alt="Produto 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 5</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 5</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image6.png"
+                                        class="card-img-top" alt="Produto 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 6</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 6</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image7.png"
+                                        class="card-img-top" alt="Produto 7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 7</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 7</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <img src="images/image8.jpg"
+                                        class="card-img-top" alt="Produto 8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 8</h5>
+                                        <p class="card-text">Descrição do
+                                            Produto 8</p>
+                                        <a href="#"
+                                            class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#produtosCarousel"
+                    role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#produtosCarousel"
+                    role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Busca por Categoria Section -->
+        <section id="busca-categoria" class="container mt-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Busque por Categoria</h2>
+                    <p>Conheça a variedade de produtos que oferecemos</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/skinCare.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Produtos para Skin Care</h5>
+                            <p class="card-text overflow-auto">This is a longer
+                                card with supporting text below as a natural
+                                lead-in to additional content. This content is a
+                                little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/home.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Loções e Sabonetes</h5>
+                            <p class="card-text overflow-auto">This is a longer
+                                card with supporting text below as a natural
+                                lead-in to additional content. This content is a
+                                little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/make.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Makes Up</h5>
+                            <p class="card-text overflow-auto">This is a longer
+                                card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/hair.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shampoos e
+                                Condicionadores</h5>
+                            <p class="card-text overflow-auto">This is a longer
+                                card with supporting text below as a natural
+                                lead-in to additional content. This content is a
+                                little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nova Seção com Duas Colunas -->
+        <section id="promo" class="container mt-5 mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="images/newBanner.webp" class="img-fluid" alt="Promoção" width="450">
+                </div>
+                <div class="col-md-6">
+                    <h2>Promoção Especial</h2>
+                    <p>Desfrute de descontos incríveis em nossos produtos durante a temporada de promoções.</p>
+                    <a href="comprar.html" class="btn btn-primary">Confira Agora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos Section -->
+        <section id="depoimentos" class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>Depoimentos</h2>
+                        <p>Veja o que nossos clientes dizem</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <p>"Os produtos são incríveis! Minha pele nunca esteve tão boa."</p>
+                            <p class="font-weight-bold">- Cliente 1</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <p>"Adoro a variedade e a qualidade dos cosméticos. Recomendo!"</p>
+                            <p class="font-weight-bold">- Cliente 2</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <p>"Excelente atendimento e entrega rápida. Estou muito satisfeita."</p>
+                            <p class="font-weight-bold">- Cliente 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="container mt-5">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2>Contato</h2>
+                    <p>Entre em contato conosco para mais informações</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Os produtos são incríveis! Minha pele nunca esteve tão boa."</p>
-                        <p class="font-weight-bold">- Cliente 1</p>
-                    </div>
+                <!-- Formulário de Contato -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome"
+                                placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem"
+                                rows="4" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Adoro a variedade e a qualidade dos cosméticos. Recomendo!"</p>
-                        <p class="font-weight-bold">- Cliente 2</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Excelente atendimento e entrega rápida. Estou muito satisfeita."</p>
-                        <p class="font-weight-bold">- Cliente 3</p>
+                <!-- Informações de Contato -->
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h5>Endereço</h5>
+                        <p>Rua Exemplo, 123<br>Bairro Exemplo<br>Cidade,
+                            Estado<br>CEP 12345-678</p>
+                        <h5>Telefone</h5>
+                        <p>(11) 1234-5678<br>(11) 8765-4321</p>
+                        <h5>Email</h5>
+                        <p>contato@lojadecosmeticos.com</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+        <!-- Footer -->
+        <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3" id="footer">
         <div class="container">
-            <p>&copy; 2024 Loja de Cosméticos. Todos os direitos reservados.</p>
+            <div class="row">
+                <!-- Logo da Empresa -->
+                <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                    <img src="images/logo.JPG" alt="Logo da Empresa" class="img-fluid" width="150">
+                </div>
+                <!-- Links Rápidos -->
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Início</a></li>
+                        <li><a href="catalogo.html" class="text-white">Catálogo</a></li>
+                        <li><a href="sobre.html" class="text-white">Sobre Nós</a></li>
+                        <li><a href="distribuidor.html" class="text-white">Seja um Distribuidor</a></li>
+                        <li><a href="comprar.html" class="text-white">Comprar Produtos</a></li>
+                        <li><a href="#contato" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <!-- Dados de Contato -->
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Rua Exemplo, 123<br>Bairro Exemplo<br>Cidade, Estado<br>CEP 12345-678</p>
+                    <p>(11) 1234-5678<br>(11) 8765-4321</p>
+                    <p>contato@lojadecosmeticos.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <p>&copy; 2024 Loja de Cosméticos. Todos os direitos reservados.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 3000
+            });
+        });
+    </script>
+    </body>
 </html>
